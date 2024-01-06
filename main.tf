@@ -24,7 +24,7 @@ locals {
     vsphere_tags = tomap({ 
         "${data.vsphere_custom_attribute.department.id}"  = "NetEng"
         "${data.vsphere_custom_attribute.environment.id}" = "Production"
-        "${data.vsphere_custom_attribute.project.id}"     = "Database"
+        "${data.vsphere_custom_attribute.project.id}"     = "Kubernetes"
         "${data.vsphere_custom_attribute.owner.id}"       = "CalvinR"
     })
     ipxe_file = "/ipxe/config/os/ubuntu-focal.ipxe"
